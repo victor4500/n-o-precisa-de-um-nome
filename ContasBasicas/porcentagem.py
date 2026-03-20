@@ -2,8 +2,6 @@ valor1 = float (input("quantos % vc quer saber: "))
 
 valor2 = float (input("valor do numero: "))
 
-calculo = ((valor1 * valor2 ) / 100 )
+calculo = ((valor1 / 100 ) * valor2 ) 
 
-calculo2 = 100 / calculo
-
-print (f" %{valor1} de {valor2} e %{calculo2}")
+print (f'%{calculo}')
