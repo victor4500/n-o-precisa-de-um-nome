@@ -10,7 +10,7 @@ altura2 = (altura * altura)
 
 imcfinal = (peso / altura2)
 
-print (f"seu IME é {imcfinal:.2f}")
+print (f"seu IMC é {imcfinal:.2f}")
 
 if imcfinal <= 24.9:
     print("vc esta na medida do seu peso, fique tranquilo.")
