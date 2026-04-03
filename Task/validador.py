@@ -16,16 +16,34 @@ def validar_nume(senha):
 
 especiais = "!@#$%&."
 
-def valirdar_caract(senha):
+def validar_caract(senha):
     for especial in senha:
         if especial in especiais:
             return True
     
     return False
             
-resltado = validar_Ncaract(senha) and validar_nume(senha) and valirdar_caract(senha)
+#resltado = validar_Ncaract(senha) and validar_nume(senha) and validar_caract(senha)
 
-if resltado:
-    print('a senha valida')
+erros = []
+
+if not validar_Ncaract(senha):
+    erros.append("A senha deve conter no minimo 8 caracteres, poxa... foi aviado a cima")
+    
+if not validar_nume(senha):
+    erros.append("já sabe onde errou né? a senha ta sem numero :(")
+
+if not validar_caract(senha):
+    erros.append("poxa errando de novo? sabe que precisade um caractere especial.")
+
+if not erros:
+    print("senha validaaa!, vc conseguiu <3")
 else:
-    print('senha não valida')
+    print("senha n ta valida fi, faz uma senha decente ai pfvr")
+    for erro in erros:
+        print("***", erro)
+
+#if resltado:
+ #   print('a senha valida')
+#else:
+ #   print('senha não valida')
