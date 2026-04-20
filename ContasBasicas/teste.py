@@ -1,1 +1,3 @@
-print ("opa, tudo bem? Eu sou um teste de código Python.")
+valor = 4
+
+print (type(valor))
