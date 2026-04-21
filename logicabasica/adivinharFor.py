@@ -1,8 +1,10 @@
+import random
+
 print("000000000000000000")
 print("usando loop for in")
 print("000000000000000000")
 
-numero = 15
+numero = random.randrange(1,21)
 tdtentativas = 3
 
 for rodada in range(1, tdtentativas + 1):

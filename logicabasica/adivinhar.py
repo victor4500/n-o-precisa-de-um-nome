@@ -1,8 +1,10 @@
+import random
+
 print("*************************************")
 print("aqui e pra vc tentar acertar o numero")
 print("*************************************")
 
-numero = 10
+numero = random.randrange(1,11)
 
 tdtentativas = 3
 
